@@ -9,8 +9,10 @@ def __init__(self):
     self.y=int
 
 def Punto(self):
-    self.punto=[self.x,self.y]
+    self.puntoA=[self.x,self.y]
+    self.puntoB=[self.x,self.y]
 
 def Distancia(self):
 
-    self.distancia= math.sqrt(self.puntoA-self.puntoB)
+    self.distancia= math.hypot(self.puntoA-self.puntoB)
+
