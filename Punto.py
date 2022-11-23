@@ -1,18 +1,15 @@
 import math
 
-
 class Punto:
 
-def __init__(self):
+    def __init__(self):
+        self.x=0
+        self.y=0
+    def calcular_distancia (self,otroPunto):
+        
+        resultado=math.sqrt(math.pow((self.x-otroPunto.x),2)+math.pow((self.x-otroPunto.y),2))
 
-    self.x=int
-    self.y=int
-
-def Punto(self):
-    self.puntoA=[self.x,self.y]
-    self.puntoB=[self.x,self.y]
-
-def Distancia(self):
-
-    self.distancia= math.hypot(self.puntoA-self.puntoB)
+        return(resultado)
+    
+    
 
